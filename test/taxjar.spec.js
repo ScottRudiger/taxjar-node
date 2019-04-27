@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const Taxjar = require('../dist/taxjar');
+const Taxjar = require(`../${process.env.CI ? 'dist' : 'lib'}/taxjar`);
 
 const rateMock = require('./mocks/rates');
 const taxMock = require('./mocks/taxes');

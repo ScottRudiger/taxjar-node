@@ -41,7 +41,7 @@
     "request-promise": "^4.2.4"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "build": "tsc",
     "test": "tsc && mocha"
   }
